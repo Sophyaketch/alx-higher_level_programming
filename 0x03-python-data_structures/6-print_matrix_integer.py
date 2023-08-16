@@ -3,9 +3,12 @@
 a function that prints a matrix of integers.
 """
 
-
 def print_matrix_integer(matrix=[[]]):
+    """Prints a matrix of ints"""
     for row in matrix:
-        for n in row:
-            print("{:d}".format(n), end=" ")
+        for i in row:
+            if i != row[-1]:
+                print("{:d}".format(i), end="")
+            else:
+                print("{:d}".format(i), end="")
         print()
